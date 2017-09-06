@@ -1,0 +1,697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3BA2DBA-0064-4B52-A85C-DF5854E1D9EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Alphabet_Soup.My.MyApplication</StartupObject>
+    <RootNamespace>Alphabet_Soup</RootNamespace>
+    <AssemblyName>Alphabet_Soup</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Alphabet_Soup.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Alphabet_Soup.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlphabetSketchBook.vb" />
+    <Compile Include="AlphabetSketchPage.vb" />
+    <Compile Include="AlphabetSketchPagePanel.Designer.vb">
+      <DependentUpon>AlphabetSketchPagePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlphabetSketchPagePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Book.vb" />
+    <Compile Include="BookButtonBox.Designer.vb">
+      <DependentUpon>BookButtonBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookButtonBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookControl.Designer.vb">
+      <DependentUpon>BookControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alphabet Soup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alphabet Soup.Designer.vb">
+      <DependentUpon>Alphabet Soup.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookPanel.Designer.vb">
+      <DependentUpon>BookPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DifficultyPagePanel.Designer.vb">
+      <DependentUpon>DifficultyPagePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DifficultyPagePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FindMeBook.vb" />
+    <Compile Include="FindMePage.vb" />
+    <Compile Include="FindMePagePanel.Designer.vb">
+      <DependentUpon>FindMePagePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindMePagePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinishedPage.vb" />
+    <Compile Include="FinishedPagePanel.Designer.vb">
+      <DependentUpon>FinishedPagePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FinishedPagePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GradeBook.vb" />
+    <Compile Include="GradePage.vb" />
+    <Compile Include="GradePagePanel.Designer.vb">
+      <DependentUpon>GradePagePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GradePagePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Letter.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LetterAudioControl.Designer.vb">
+      <DependentUpon>LetterAudioControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LetterAudioControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlaceholderControl.Designer.vb">
+      <DependentUpon>PlaceholderControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceholderControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlaceholderForm.Designer.vb">
+      <DependentUpon>PlaceholderForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceholderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsPanel.Designer.vb">
+      <DependentUpon>SettingsPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SoundReferenceLibrary.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Page.vb" />
+    <Compile Include="PagePanel.Designer.vb">
+      <DependentUpon>PagePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SoundOffBook.vb" />
+    <Compile Include="SoundOffPage.vb" />
+    <Compile Include="SoundOffPagePanel.Designer.vb">
+      <DependentUpon>SoundOffPagePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SoundOffPagePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WhatAmIBook.vb" />
+    <Compile Include="WhatAmIControl.Designer.vb">
+      <DependentUpon>WhatAmIControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WhatAmIControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhatAmIPage.vb" />
+    <Compile Include="WhatAmIPagePanel.Designer.vb">
+      <DependentUpon>WhatAmIPagePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WhatAmIPagePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Word.Designer.vb">
+      <DependentUpon>Word.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Word.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlphabetSketchPagePanel.resx">
+      <DependentUpon>AlphabetSketchPagePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookButtonBox.resx">
+      <DependentUpon>BookButtonBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookControl.resx">
+      <DependentUpon>BookControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alphabet Soup.resx">
+      <DependentUpon>Alphabet Soup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookPanel.resx">
+      <DependentUpon>BookPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DifficultyPagePanel.resx">
+      <DependentUpon>DifficultyPagePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindMePagePanel.resx">
+      <DependentUpon>FindMePagePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinishedPagePanel.resx">
+      <DependentUpon>FinishedPagePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradePagePanel.resx">
+      <DependentUpon>GradePagePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LetterAudioControl.resx">
+      <DependentUpon>LetterAudioControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaceholderForm.resx">
+      <DependentUpon>PlaceholderForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsPanel.resx">
+      <DependentUpon>SettingsPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoundOffPagePanel.resx">
+      <DependentUpon>SoundOffPagePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhatAmIControl.resx">
+      <DependentUpon>WhatAmIControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhatAmIPagePanel.resx">
+      <DependentUpon>WhatAmIPagePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Word.resx">
+      <DependentUpon>Word.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueFish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check_mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LondrinaOutline-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x_mark_large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YellowFish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12076882_10156270062815346_1397403668_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12076905_10156270065465346_834267128_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12233273_10156270066850346_400174205_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12242175_10156270067405346_1376019739_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12243819_10156270067710346_459015957_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12248712_10156270065125346_491137827_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12270387_10156270067875346_1047795616_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12270531_10156270066500346_1547383151_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12272552_10156270064305346_1531160057_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12282985_10156270067160346_756418875_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover_alphabetsketch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover_findme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover_soundoff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover_tapit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover_whatami.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spine_alphabetsketch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spine_findme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spine_soundoff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spine_tapit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spine_whatami.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bensound-littleidea.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Correct_Answer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Apple Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Apple Non-Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Book Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Book Non-Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Cat Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Cat Non-Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Dog Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Dog Non-Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Flower Coloured .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Flower Non-Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I House Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I House Non-Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Mouse Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Mouse Non-Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Telephone Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Telephone Non-Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Violin Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Violin Non-Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Watermelon Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What Am I Watermelon Non-Coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grade_Book_Cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grade_Book_Spine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main_Screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FIVE_Activity_Graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ant.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flower.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction_Drag_Letter_Toybox.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction_Drag_Letter_Word.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction_Tap_Speaker.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction_Trace_Outline.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction_Try_Again.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction_Type_Keyboard.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mouse.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Telephone.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title_Alphabet_Sketch.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title_Find_Me.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title_Grade_Book.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title_Sound_Off.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title_What_Am_I.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Violin.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Watermelon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Y.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Z.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction_Try_Again_Short.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpeakerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueSoundIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackSoundIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page_Screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChestClosed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChestOpen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction_Tap_Speaker_Type_Keyboard.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erasor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LetterStyle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaintSplotch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achievements.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserAdd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserRemove.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question_Mark.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
